@@ -12,9 +12,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
-       // setupActionBarWithNavController(findNavController(R.id.fragmentMain))
+        setupActionBarWithNavController(findNavController(R.id.fragmentMain))
     }
 
     override fun onSupportNavigateUp(): Boolean {
