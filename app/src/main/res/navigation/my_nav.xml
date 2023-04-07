@@ -34,5 +34,17 @@
         <action
             android:id="@+id/action_fragment_B_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_fragment_B_to_fragment_C"
+            app:destination="@id/fragment_C" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_C"
+        android:name="com.example.practiceapp.Fragment_C"
+        android:label="fragment__c"
+        tools:layout="@layout/fragment__c" >
+        <argument
+            android:name="Text"
+            app:argType="string" />
     </fragment>
 </navigation>
